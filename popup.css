@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font: 13px/1.4 Verdana, Geneva, sans-serif;
+  background: #f6f6ef;
+}
+.container {
+  padding: 12px 14px;
+  min-width: 200px;
+}
+.title {
+  font-weight: 700;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+.toggle input { margin: 0; }
+.hint {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #828282;
+}

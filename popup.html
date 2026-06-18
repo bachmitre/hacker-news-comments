@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HN Comments Reader</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">HN Comments Reader</div>
+      <label class="toggle">
+        <input id="drilldown" type="checkbox" />
+        <span class="label">Drill-down view</span>
+      </label>
+      <label class="toggle">
+        <input id="markdown" type="checkbox" />
+        <span class="label">Render markdown</span>
+      </label>
+      <label class="toggle">
+        <input id="hideAddComment" type="checkbox" />
+        <span class="label">Hide add-comment box</span>
+      </label>
+      <div class="hint">Changes reload the current thread.</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

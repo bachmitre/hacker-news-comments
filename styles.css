@@ -1,0 +1,95 @@
+/* ---- core ---- */
+.hnx-hidden { display: none !important; }
+
+/* ---- drill-down toggle badge ---- */
+.hnx-toggle {
+  margin-left: 8px;
+  padding: 0 5px;
+  border: 1px solid rgba(255, 102, 0, 0.5);
+  border-radius: 3px;
+  font-size: 8pt;
+  line-height: 1.7;
+  color: #ff6600 !important;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.hnx-toggle:hover { background: rgba(255, 102, 0, 0.12); }
+
+/* Byline moved below the comment text. */
+.hnx-meta-below { margin: 5px 0 0 0 !important; }
+
+/* Upvote arrow relocated into the byline, right of the reply count. */
+.hnx-drilldown tr.comtr td.votelinks { display: none; }
+.hnx-meta-below .hnx-vote { margin-left: 8px; }
+.hnx-meta-below .hnx-vote .votearrow { display: inline-block; vertical-align: middle; }
+
+/* Separator between comments (and above the first, to mark where comments begin). */
+.hnx-drilldown tr.comtr > td { border-bottom: 1px solid #e6e6df; padding-bottom: 7px; }
+.hnx-drilldown tr.comtr.hnx-first-comment > td { border-top: 1px solid #e6e6df; padding-top: 7px; }
+
+/* Hint that a comment can be drilled into. */
+.hnx-drilldown .hnx-haschildren span.comhead { cursor: pointer; }
+
+/* In drill-down mode HN's own collapse/next/prev nav is redundant. */
+.hnx-drilldown .navs { display: none; }
+
+/* ---- add-comment button + panel ---- */
+.hnx-addcomment-btn {
+  position: fixed;
+  top: 10px;
+  right: 14px;
+  z-index: 2147483646;
+  padding: 5px 12px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font: 600 12px/1.4 Verdana, Geneva, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.hnx-addcomment-btn:hover { background: #e65c00; }
+
+.hnx-addcomment-panel {
+  position: fixed;
+  top: 44px;
+  right: 14px;
+  z-index: 2147483646;
+  width: min(620px, 92vw);
+  max-height: 75vh;
+  overflow: auto;
+  padding: 12px 14px;
+  background: #f6f6ef;
+  border: 1px solid #d0d0c0;
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.28);
+}
+.hnx-addcomment-panel textarea {
+  width: 100% !important;
+  box-sizing: border-box;
+  min-height: 140px;
+}
+
+/* ---- rendered markdown inside comments ---- */
+.commtext pre {
+  white-space: pre-wrap;
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+.commtext code { font-family: Menlo, Consolas, monospace; }
+.commtext blockquote {
+  margin: 6px 0;
+  padding-left: 10px;
+  border-left: 3px solid #d0d0c0;
+  color: #555;
+}
+.commtext ul, .commtext ol { margin: 6px 0 6px 22px; padding: 0; }
+.commtext table { border-collapse: collapse; margin: 6px 0; }
+.commtext th, .commtext td { border: 1px solid #ccc; padding: 2px 6px; }
+.commtext h1, .commtext h2, .commtext h3, .commtext h4 {
+  font-size: 1.05em;
+  margin: 8px 0 4px;
+}
