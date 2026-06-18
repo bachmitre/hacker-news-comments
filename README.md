@@ -2,6 +2,8 @@
 
 A Chrome extension that makes reading Hacker News threads easier.
 
+![Screenshot](pictures/screenshot.png)
+
 ## Features
 
 - **Drill-down view** — A thread opens showing **top-level comments only**, each with a
