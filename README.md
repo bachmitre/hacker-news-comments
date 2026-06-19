@@ -18,7 +18,11 @@ A Chrome extension that makes reading Hacker News threads easier.
 
 Everything is toggleable from the toolbar popup.
 
-## Install (unpacked)
+## Install
+
+**[Add to Chrome from the Chrome Web Store →](https://chromewebstore.google.com/detail/hn-comments-reader/oammegfgbfeliilfekapkipnehphppip)**
+
+Or load it unpacked for development:
 
 1. Open `chrome://extensions`, enable **Developer mode**.
 2. **Load unpacked** → select this folder.
